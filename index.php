@@ -16,13 +16,8 @@ try {
     $stmt = $conn->query($query);
 
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    if ($result->rowCount() > 0) {
-        print_r($result);
-    }else{
-        print_r("No Records");
-    }
-    
-    
+    print_r($result);
+
     unset($stmt);
     unset($conn);
 } catch (Exception $e) {
