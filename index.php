@@ -17,6 +17,7 @@ try {
 
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     if ($result->rowCount() > 0) {
+        print_r($result->rowCount());
         print_r($result);
     }else{
         print_r("No Records");
