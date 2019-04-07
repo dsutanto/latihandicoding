@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $conn = new PDO("sqlsrv:server = tcp:azuredavid.database.windows.net,1433; Database = latihanazure", "ignzdave", "{your_password_here}");
+    $conn = new PDO("sqlsrv:server = tcp:azuredavid.database.windows.net,1433; Database = latihanazure", "ignzdave", "464884b75A");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
