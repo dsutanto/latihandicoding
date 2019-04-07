@@ -16,7 +16,12 @@ try {
     $stmt = $conn->query($query);
 
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    print_r($result);
+    if ($result->rowCount() > 0) {
+        print_r($result);
+    }else{
+        print_r("No Records");
+    }
+    
     
     unset($stmt);
     unset($conn);
