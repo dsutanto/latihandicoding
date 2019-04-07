@@ -10,7 +10,7 @@ catch (PDOException $e) {
 }
 
 try {
-    $tableName = 'User';
+    //$tableName = 'User';
     
     $query = "SELECT * FROM [dbo].[User]";
     $stmt = $conn->query($query);
