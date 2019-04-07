@@ -15,7 +15,7 @@ try {
     $query = "SELECT * FROM [dbo].[User]";
     $stmt = $conn->query($query);
 
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     print_r($result);
     
     unset($stmt);
